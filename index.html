@@ -82,6 +82,16 @@
                         <li class="nav-item">
                             <a class="nav-link waves-effect waves-light"><i class="fab fa-pinterest"></i></a>
                         </li>
+                        <li class="nav-item">
+                            <span id="cart-info">
+                                <a class="nav-link waves-effect waves-light justify-content-left" id="modalActivate" type="button" class="btn btn-danger" data-toggle="modal" data-target="#ModalCart"><i
+                                        class="fas fa-shopping-cart"></i><span id="item-count">2 </span> items - $<span
+                                        class="item-total">10.49</span></a></span>
+
+
+
+
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -89,8 +99,9 @@
         <!--Main Navigation-->
 
 
+
         <!--Intro Section-->
-        <section class="view intro-video" style="height: 100%;"  id="home">
+        <section class="view intro-video" style="height: 100%;" id="home">
             <video playsinline autoplay muted loop>
                 <source src="https://mdbootstrap.com/img/video/Lines.mp4" type="video/mp4">
             </video>
@@ -451,12 +462,16 @@
                                 <span class="float-left">$19<span style="font-size: 70%; vertical-align: top;">
                                         98</span></span>
                                 <span class="float-right">
+
+
                                     <!--collapse Cart button-->
                                     <a class="" type="button" data-target="#collapseShoppingCart" aria-expanded="false"
                                         aria-controls="collapseShoppingCart" data-toggle="collapse"
                                         title="Add to the Cart">
                                         <i class="fas fa-shopping-cart mr-3" aria-hidden="true"></i></a>
                                     <!--/collapse button cart-->
+
+
                                     <a data-toggle="tooltip" data-placement="top" title="Share"><i
                                             class="fas fa-share-alt mr-3"></i></a>
                                     <a class="active" data-toggle="tooltip" data-placement="top"
@@ -568,7 +583,8 @@
                                         98</span></span>
                                 <span class="float-right">
                                     <!--collapse Cart button-->
-                                    <a href="#collapseShoppingCart" class="" type="button" data-target="#collapseShoppingCart" aria-expanded="false"
+                                    <a href="#collapseShoppingCart" class="" type="button"
+                                        data-target="#collapseShoppingCart" aria-expanded="false"
                                         aria-controls="collapseShoppingCart" data-toggle="collapse"
                                         title="Add to the Cart">
                                         <i class="fas fa-shopping-cart mr-3" aria-hidden="true"></i></a>
@@ -591,317 +607,7 @@
                 <!--/First row-->
 
             </section>
-            <!--/Section: Pricing v.3-->
-            <!--start Collapse shopping Card-->
-            <!-- Collapsible element -->
-            <div class="collapse" id="collapseShoppingCart">
-                <div class="card">
-                    <div class="card-body">
 
-                        <!--Grid row-->
-                        <div class="row">
-
-                            <!--Grid column-->
-                            <div class="col-lg-8 mb-4">
-
-                                <!-- Pills navs -->
-                                <ul class="nav md-pills nav-justified pills-primary font-weight-bold">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" data-toggle="tab" href="#tabCheckoutBilling123" 
-                                            role="tab">1. Billing</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#tabCheckoutPayment123"
-                                            role="tab">2. Payment</a>
-                                    </li>
-                                </ul>
-
-                                <!-- Pills panels -->
-                                <div class="tab-content pt-4">
-
-                                    <!--Panel 1-->
-                                    <div class="tab-pane fade in show active" id="tabCheckoutBilling123"
-                                        role="tabpanel">
-
-                                        <!--Card content-->
-                                        <form>
-
-                                            <!--Grid row-->
-                                            <div class="row">
-
-                                                <!--Grid column-->
-                                                <div class="col-md-6 mb-4">
-
-                                                    <!--firstName-->
-                                                    <label for="firstName" class="">First name</label>
-                                                    <input type="text" id="firstName" class="form-control">
-
-                                                </div>
-                                                <!--Grid column-->
-
-                                                <!--Grid column-->
-                                                <div class="col-md-6 mb-2">
-
-                                                    <!--lastName-->
-                                                    <label for="lastName" class="">Last name</label>
-                                                    <input type="text" id="lastName" class="form-control">
-
-                                                </div>
-                                                <!--Grid column-->
-
-                                            </div>
-                                            <!--Grid row-->
-
-                                            <!--Username-->
-                                            <div class="input-group mb-4">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text" id="basic-addon1">@</span>
-                                                </div>
-                                                <input type="text" class="form-control py-0" placeholder="Username"
-                                                    aria-describedby="basic-addon1">
-                                            </div>
-
-                                            <!--email-->
-                                            <div>
-                                            <label for="email" class="">Email</label>
-                                            <input type="text" id="email" class="form-control mb-4"
-                                                placeholder="youremail@example.com" required>
-                                                <div class="invalid-feedback">
-                                                    Email required
-                                                </div>
-                                            </div>
-                                            <!--address-->
-                                            <label for="address" class="">Address</label>
-                                            <input type="text" id="address" class="form-control mb-4"
-                                                placeholder="1234 Main St">
-
-                                            <!--address-2-->
-                                            <label for="address-2" class="">Address 2 (optional)</label>
-                                            <input type="text" id="address-2" class="form-control mb-4"
-                                                placeholder="Apartment or suite">
-
-                                            <!--Grid row-->
-                                            <div class="row">
-
-                                                <!--Grid column-->
-                                                <div class="col-lg-4 col-md-12 mb-4">
-
-                                                    <label for="country">Country</label>
-                                                    <select class="custom-select d-block w-100" id="country" required>
-                                                        <option value="">Choose...</option>
-                                                        <option>United States</option>
-                                                    </select>
-                                                    <div class="invalid-feedback">
-                                                        Please select a valid country.
-                                                    </div>
-
-                                                </div>
-                                                <!--Grid column-->
-
-                                                <!--Grid column-->
-                                                <div class="col-lg-4 col-md-6 mb-4">
-
-                                                    <label for="state">State</label>
-                                                    <select class="custom-select d-block w-100" id="state" required>
-                                                        <option value="">Choose...</option>
-                                                        <option>California</option>
-                                                    </select>
-                                                    <div class="invalid-feedback">
-                                                        Please provide a valid state.
-                                                    </div>
-
-                                                </div>
-                                                <!--Grid column-->
-
-                                                <!--Grid column-->
-                                                <div class="col-lg-4 col-md-6 mb-4">
-
-                                                    <label for="zip">Zip</label>
-                                                    <input type="text" class="form-control" id="zip" placeholder=""
-                                                        required>
-                                                    <div class="invalid-feedback">
-                                                        Zip code required.
-                                                    </div>
-
-                                                </div>
-                                                <!--Grid column-->
-
-                                            </div>
-                                            <!--Grid row-->
-
-                                            <hr>
-
-                                            <div class="mb-1">
-                                                <input type="checkbox" class="form-check-input filled-in"
-                                                    id="chekboxRules">
-                                                <label class="form-check-label" for="chekboxRules">I accept the terms
-                                                    and
-                                                    conditions</label>
-                                            </div>
-                                            <hr>
-
-
-                                            <button class="btn btn-primary btn-lg btn-block" type="submit">Next
-                                                step</button>
-
-                                        </form>
-
-                                    </div>
-                                    <!--/.Panel 1-->
-
-                                    
-                                    <!--Panel 3-->
-                                    <div class="tab-pane fade" id="tabCheckoutPayment123" role="tabpanel">
-
-                                        <div class="d-block my-3">
-                                            <div class="mb-2">
-                                                <input name="group2" type="radio" class="form-check-input with-gap"
-                                                    id="radioWithGap4" checked required>
-                                                <label class="form-check-label" for="radioWithGap4">Credit card</label>
-                                            </div>
-                                            <div class="mb-2">
-                                                <input iname="group2" type="radio" class="form-check-input with-gap"
-                                                    id="radioWithGap5" required>
-                                                <label class="form-check-label" for="radioWithGap5">Debit card</label>
-                                            </div>
-                                            <div class="mb-2">
-                                                <input name="group2" type="radio" class="form-check-input with-gap"
-                                                    id="radioWithGap6" required>
-                                                <label class="form-check-label" for="radioWithGap6">Paypal</label>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6 mb-3">
-                                                <label for="cc-name123">Name on card</label>
-                                                <input type="text" class="form-control" id="cc-name123" placeholder=""
-                                                    required>
-                                                <small class="text-muted">Full name as displayed on card</small>
-                                                <div class="invalid-feedback">
-                                                    Name on card is required
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 mb-3">
-                                                <label for="cc-number123">Credit card number</label>
-                                                <input type="text" class="form-control" id="cc-number123" placeholder=""
-                                                    required>
-                                                <div class="invalid-feedback">
-                                                    Credit card number is required
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-3 mb-3">
-                                                <label for="cc-expiration123">Expiration</label>
-                                                <input type="text" class="form-control" id="cc-expiration123"
-                                                    placeholder="" required>
-                                                <div class="invalid-feedback">
-                                                    Expiration date required
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3 mb-3">
-                                                <label for="cc-cvv123">CVV</label>
-                                                <input type="text" class="form-control" id="cc-cvv123" placeholder=""
-                                                    required>
-                                                <div class="invalid-feedback">
-                                                    Security code required
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <hr class="mb-4">
-
-                                        <button class="btn btn-primary btn-lg btn-block" type="submit">Place
-                                            order</button>
-
-                                    </div>
-                                    <!--/.Panel 3-->
-
-                                </div>
-                                <!-- Pills panels -->
-
-
-                            </div>
-                            <!--Grid column-->
-
-                            <!--Grid column-->
-                            <div class="col-lg-4 mb-4">
-
-                                <button class="btn btn-primary btn-lg btn-block" type="submit">Place order</button>
-
-                                <!--Card-->
-                                <div class="card">
-
-                                    <!--Card content-->
-                                    <div class="card-body">
-                                        <h4 class="mb-4 mt-1 h5 text-center font-weight-bold">Summary</h4>
-
-                                        <hr>
-
-                                        <dl class="row">
-                                            <dd class="col-sm-8">
-                                                MDBootstrap UI KIT (jQuery version) - License 6-10 poeple + unlimited
-                                                projects
-                                            </dd>
-                                            <dd class="col-sm-4">
-                                                $ 2000
-                                            </dd>
-                                        </dl>
-
-                                        <hr>
-
-                                        <dl class="row">
-                                            <dd class="col-sm-8">
-                                                Premium support - 2 years
-                                            </dd>
-                                            <dd class="col-sm-4">
-                                                $ 2000
-                                            </dd>
-                                        </dl>
-
-                                        <hr>
-
-                                        <dl class="row">
-                                            <dd class="col-sm-8">
-                                                MDB Membership - 2 years
-                                            </dd>
-                                            <dd class="col-sm-4">
-                                                $ 2000
-                                            </dd>
-                                        </dl>
-
-                                        <hr>
-
-                                        <dl class="row">
-                                            <dt class="col-sm-8">
-                                                Total
-                                            </dt>
-                                            <dt class="col-sm-4">
-                                                $ 2000
-                                            </dt>
-                                        </dl>
-                                    </div>
-
-                                </div>
-                                <!--/.Card-->
-
-
-
-                            </div>
-                            <!--Grid column-->
-
-                        </div>
-                        <!--Grid row-->
-
-                    </div>
-                </div>
-                <!-- / Collapsible element -->
-
-
-
-                <!--/Collapse shopping Card-->
-
-            </div>
-            <!--end Collapse shopping Card-->
-            <p></p>
         </div>
         <!--/.Third container item cards-->
 
@@ -910,8 +616,8 @@
 
         <!--/Fourth container-->
         <!--Section: Press -->
-        <div class="streak streak-md streak-photo"
-            style="background-image: url(/img/fazup_family_photo_background.jpg)" id="press">
+        <div class="streak streak-md streak-photo" style="background-image: url(/img/fazup_family_photo_background.jpg)"
+            id="press">
             <div class="flex-center white-text blue-gradient-mask ">
                 <section class="text-center pb-4 ">
 
@@ -968,10 +674,11 @@
                             </div>
                             <!--Modal: Name-->
 
-<!--original link-->
-<a data-wow-delay="0.3s"><img class="img-fluid z-depth-1" src="/img/miss_green_8_direct_footage.JPG" alt="video"
-        data-toggle="modal" data-target="#modal_missgreen"></a>
-<!--/.original link-->
+                            <!--original link-->
+                            <a data-wow-delay="0.3s"><img class="img-fluid z-depth-1"
+                                    src="/img/miss_green_8_direct_footage.JPG" alt="video" data-toggle="modal"
+                                    data-target="#modal_missgreen"></a>
+                            <!--/.original link-->
 
 
                         </div>
@@ -1090,62 +797,409 @@
         <!--background pic-->
 
 
-<!--Section five - lond press show-->
 
-<div class="container-fluid mt-3 mb-5">
 
-    <!-- Section -->
-    <section class="bg-primary z-depth-1 blue-gradient">
 
-        <!-- Modal -->
-        <div class="modal fade" id="exp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-                        <iframe id="player" class="embed-responsive-item"
-                            src="https://www.youtube.com/embed/4K2A7xwYpr0" frameborder="0"
-                            allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<!-- Modal -->
+<div class="modal fade top" id="ModalCart" tabindex="-1" role="dialog"
+    aria-labelledby="ModalCartLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-full-height modal-top" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="ModalCartLabel">Cart</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+            <div class="card">
+                <div class="card-body">
+
+                    <!--Grid row-->
+                    <div class="row">
+
+                        <!--Grid column-->
+                        <div class="col-lg-7 mb-4">
+
+                            <!-- Pills navs -->
+                            <ul class="nav md-pills nav-justified pills-primary font-weight-bold">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#tabCheckoutBilling123" role="tab">1.
+                                        Billing</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#tabCheckoutPayment123" role="tab">2. Payment</a>
+                                </li>
+                            </ul>
+
+                            <!-- Pills panels -->
+                            <div class="tab-content pt-4">
+
+                                <!--Panel 1-->
+                                <div class="tab-pane fade in show active" id="tabCheckoutBilling123" role="tabpanel">
+
+                                    <!--Card content-->
+                                    <form>
+
+                                        <!--Grid row-->
+                                        <div class="row">
+
+                                            <!--Grid column-->
+                                            <div class="col-md-6 mb-4">
+
+                                                <!--firstName-->
+                                                <label for="firstName" class="">First name</label>
+                                                <input type="text" id="firstName" class="form-control">
+
+                                            </div>
+                                            <!--Grid column-->
+
+                                            <!--Grid column-->
+                                            <div class="col-md-6 mb-2">
+
+                                                <!--lastName-->
+                                                <label for="lastName" class="">Last name</label>
+                                                <input type="text" id="lastName" class="form-control">
+
+                                            </div>
+                                            <!--Grid column-->
+
+                                        </div>
+                                        <!--Grid row-->
+
+                                        <!--Username-->
+                                        <div class="input-group mb-4">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon1">@</span>
+                                            </div>
+                                            <input type="text" class="form-control py-0" placeholder="Username"
+                                                aria-describedby="basic-addon1">
+                                        </div>
+
+                                        <!--email-->
+                                        <div>
+                                            <label for="email" class="">Email</label>
+                                            <input type="text" id="email" class="form-control mb-4"
+                                                placeholder="youremail@example.com" required>
+                                            <div class="invalid-feedback">
+                                                Email required
+                                            </div>
+                                        </div>
+                                        <!--address-->
+                                        <label for="address" class="">Address</label>
+                                        <input type="text" id="address" class="form-control mb-4" placeholder="1234 Main St">
+
+                                        <!--address-2-->
+                                        <label for="address-2" class="">Address 2 (optional)</label>
+                                        <input type="text" id="address-2" class="form-control mb-4"
+                                            placeholder="Apartment or suite">
+
+                                        <!--Grid row-->
+                                        <div class="row">
+
+                                            <!--Grid column-->
+                                            <div class="col-lg-4 col-md-12 mb-4">
+
+                                                <label for="country">Country</label>
+                                                <select class="custom-select d-block w-100" id="country" required>
+                                                    <option value="">Choose...</option>
+                                                    <option>United States</option>
+                                                </select>
+                                                <div class="invalid-feedback">
+                                                    Please select a valid country.
+                                                </div>
+
+                                            </div>
+                                            <!--Grid column-->
+
+                                            <!--Grid column-->
+                                            <div class="col-lg-4 col-md-6 mb-4">
+
+                                                <label for="state">State</label>
+                                                <select class="custom-select d-block w-100" id="state" required>
+                                                    <option value="">Choose...</option>
+                                                    <option>California</option>
+                                                </select>
+                                                <div class="invalid-feedback">
+                                                    Please provide a valid state.
+                                                </div>
+
+                                            </div>
+                                            <!--Grid column-->
+
+                                            <!--Grid column-->
+                                            <div class="col-lg-4 col-md-6 mb-4">
+
+                                                <label for="zip">Zip</label>
+                                                <input type="text" class="form-control" id="zip" placeholder="" required>
+                                                <div class="invalid-feedback">
+                                                    Zip code required.
+                                                </div>
+
+                                            </div>
+                                            <!--Grid column-->
+
+                                        </div>
+                                        <!--Grid row-->
+
+                                        <hr>
+
+                                        <div class="mb-1">
+                                            <input type="checkbox" class="form-check-input filled-in" id="chekboxRules">
+                                            <label class="form-check-label" for="chekboxRules">I accept the terms
+                                                and
+                                                conditions</label>
+                                        </div>
+                                        <hr>
+
+
+                                        <button class="btn btn-primary btn-lg btn-block mx-auto d-block" type="submit">Next
+                                            step</button>
+
+                                    </form>
+
+                                </div>
+                                <!--/.Panel 1-->
+
+
+                                <!--Panel 3-->
+                                <div class="tab-pane fade" id="tabCheckoutPayment123" role="tabpanel">
+
+                                    <div class="d-block my-3">
+                                        <div class="mb-2">
+                                            <input name="group2" type="radio" class="form-check-input with-gap" id="radioWithGap4"
+                                                checked required>
+                                            <label class="form-check-label" for="radioWithGap4">Credit card</label>
+                                        </div>
+                                        <div class="mb-2">
+                                            <input iname="group2" type="radio" class="form-check-input with-gap" id="radioWithGap5"
+                                                required>
+                                            <label class="form-check-label" for="radioWithGap5">Debit card</label>
+                                        </div>
+                                        <div class="mb-2">
+                                            <input name="group2" type="radio" class="form-check-input with-gap" id="radioWithGap6"
+                                                required>
+                                            <label class="form-check-label" for="radioWithGap6">Paypal</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="cc-name123">Name on card</label>
+                                            <input type="text" class="form-control" id="cc-name123" placeholder="" required>
+                                            <small class="text-muted">Full name as displayed on card</small>
+                                            <div class="invalid-feedback">
+                                                Name on card is required
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="cc-number123">Credit card number</label>
+                                            <input type="text" class="form-control" id="cc-number123" placeholder="" required>
+                                            <div class="invalid-feedback">
+                                                Credit card number is required
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3 mb-3">
+                                            <label for="cc-expiration123">Expiration</label>
+                                            <input type="text" class="form-control" id="cc-expiration123" placeholder="" required>
+                                            <div class="invalid-feedback">
+                                                Expiration date required
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 mb-3">
+                                            <label for="cc-cvv123">CVV</label>
+                                            <input type="text" class="form-control" id="cc-cvv123" placeholder="" required>
+                                            <div class="invalid-feedback">
+                                                Security code required
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr class="mb-4">
+
+                                    <button class="btn btn-primary btn-lg btn-block" type="submit">Place
+                                        order</button>
+
+                                </div>
+                                <!--/.Panel 3-->
+
+                            </div>
+                            <!-- Pills panels -->
+
+
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-lg-5 mb-4">
+
+                            <button class="btn btn-primary btn-lg btn-block mx-auto d-block" type="submit">Place order</button>
+
+                            <!--Card-->
+                            <div class="card">
+
+                                <!--Card content-->
+                                <div class="card-body">
+                                    <h4 class="mb-4 mt-1 h5 text-center font-weight-bold">Summary</h4>
+
+                                    <hr>
+
+                                    <dl class="row">
+                                        <dd class="col-sm-2"><img src="img-cart/fazup_1.jpg" class="img-fluid rounded-circle"
+                                                id="item-img" alt=""></dd>
+
+                                        <dd class="col-sm-5">
+                                            <span id="cart-item-title">
+                                                Gold patch
+                                            </span>
+                                        </dd>
+                                        <dd class="col-sm-3">
+                                            <span>$</span>
+                                            <span id="cart-item-price" class="cart-item-price">24.95 </span>
+                                        </dd>
+                                        <dd class="col-sm-2">
+                                            <a href="#" id='cart-item-remove' class="cart-item-remove">
+                                                <i class="fas fa-trash"></i>
+                                            </a>
+                                        </dd>
+                                    </dl>
+
+                                    <hr>
+
+                                    <dl class="row">
+                                        <dd class="col-sm-2 cart-item"><img src="img-cart/fazup_1.jpg"
+                                                class="img-fluid rounded-circle" id="item-img" alt=""></dd>
+
+                                        <dd class="col-sm-5">
+                                            <span id="cart-item-title">
+                                                Family patch
+                                            </span>
+                                        </dd>
+                                        <dd class="col-sm-3">
+                                            <span>$</span>
+                                            <span id="cart-item-price" class="cart-item-price">29.95 </span>
+                                        </dd>
+                                        <dd class="col-sm-2">
+                                            <a href="#" id='cart-item-remove' class="cart-item-remove">
+                                                <i class="fas fa-trash"></i>
+                                            </a>
+                                        </dd>
+                                    </dl>
+
+                                    <hr>
+
+                                    <dl class="row">
+                                        <dd class="col-sm-2"><img src="img-cart/fazup_1.jpg" class="img-fluid rounded-circle"
+                                                id="item-img" alt=""></dd>
+
+                                        <dd class="col-sm-5">
+                                            <span id="cart-item-title">
+                                                Silver patch
+                                            </span>
+                                        </dd>
+                                        <dd class="col-sm-3">
+                                            <span>$</span> <span id="cart-item-price" class="cart-item-price">19.95 </span>
+                                        </dd>
+                                        <dd class="col-sm-2">
+                                            <a href="#" id='cart-item-remove' class="cart-item-remove">
+                                                <i class="fas fa-trash"></i>
+                                            </a>
+                                        </dd>
+                                    </dl>
+
+                                    <hr>
+
+                                    <dl class="row">
+                                        <dt class="col-sm-8">
+                                            Total
+                                        </dt>
+                                        <dt class="col-sm-4">
+                                            $ <strong id="cart-total" class="font-weight-bold">10.00</strong>
+                                        </dt>
+                                    </dl>
+                                </div>
+
+                            </div>
+                            <!--/.Card-->
+
+
+
+                        </div>
+                        <!--Grid column-->
+
                     </div>
+                    <!--Grid row-->
+
                 </div>
+            </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
             </div>
         </div>
-
-        <div class="row no-gutters">
-
-            <div class="col-md-6 order-md-2">
-                <div class="view">
-                    <img class="img-fluid" src="/img/should_know_about_phone.jpg"
-                        alt="Video title">
-                    <div class="mask flex-center">
-
-                                                <a id="play" class="btn-floating btn-info btn-lg waves-effect" data-toggle="modal" data-target="#exp"><i
-                                class="fas fa-play"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-10 col-md-4 mx-auto d-flex align-items-center text-white">
-                <div>
-                    <h3 class="font-weight-normal mb-4">What should you know about your phone.</h3>
-                    <p class="mb-0">The extra-thin patch includes a passive antenna in
-                    conductive silver ink, whichregulates radiation emission
-                    of your phone. This emission is controlled through precise
-                    and specific emplacement of the patch at the back of
-                    mobile phone, close to its antennas. Specific emplacement
-                    of Fazup is found in a laboratory for each compatible
-                    mobile phone and it allows to reduce radiation emissions
-                    without impacting communication quality.</p>
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <!-- Section -->
-
+    </div>
 </div>
+<!-- Modal -->
 
-<!--/.Section five-->
+
+
+        <!--Section five - lond press show-->
+
+        <div class="container-fluid mt-3 mb-5">
+
+            <!-- Section -->
+            <section class="bg-primary z-depth-1 blue-gradient">
+
+                <!-- Modal -->
+                <div class="modal fade" id="exp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                <iframe id="player" class="embed-responsive-item"
+                                    src="https://www.youtube.com/embed/4K2A7xwYpr0" frameborder="0"
+                                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row no-gutters">
+
+                    <div class="col-md-6 order-md-2">
+                        <div class="view">
+                            <img class="img-fluid" src="/img/should_know_about_phone.jpg" alt="Video title">
+                            <div class="mask flex-center">
+
+                                <a id="play" class="btn-floating btn-info btn-lg waves-effect" data-toggle="modal"
+                                    data-target="#exp"><i class="fas fa-play"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-10 col-md-4 mx-auto d-flex align-items-center text-white">
+                        <div>
+                            <h3 class="font-weight-normal mb-4">What should you know about your phone.</h3>
+                            <p class="mb-0">The extra-thin patch includes a passive antenna in
+                                conductive silver ink, whichregulates radiation emission
+                                of your phone. This emission is controlled through precise
+                                and specific emplacement of the patch at the back of
+                                mobile phone, close to its antennas. Specific emplacement
+                                of Fazup is found in a laboratory for each compatible
+                                mobile phone and it allows to reduce radiation emissions
+                                without impacting communication quality.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!-- Section -->
+
+        </div>
+
+        <!--/.Section five-->
 
     </main>
     <!--/.Main content-->
@@ -1311,6 +1365,9 @@
 
     <!-- MDB core JavaScript -->
     <script type="text/javascript " src="../js/mdb.min.js "></script>
+
+    <!-- Cart show script js -->
+    <script src="js/app.js"></script>
 
     <script>
         //Animation init
