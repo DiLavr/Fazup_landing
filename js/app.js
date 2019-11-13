@@ -25,34 +25,8 @@
             //we are targetiing specificly on Icon cart, not the whole element
             if (event.target.classList.contains("store-item-icon")) {
 
-                // course of the image in class cart
-                // <div class="img-container">
-                // <img src="img/doughnut-1.jpeg" class="card-img-top store-img" alt="">
-                // <span class="store-item-icon">
-                // <i class="fas fa-shopping-cart"></i>
-                // </span>
-                // </div>
 
 
-
-                // console.log(event.target);
-
-                // console.log(event.target.parentElement.parentElement.parentElement.previousElementSibling.children[0].src);
-
-
-                    //get the img for the cart in small size
-
-
-                    // let fullPath = event.target.parentElement.previousElementSibling.src;
-
-
-
-                    let pos = fullPath.indexOf("img") + 3;
-                    // get doughnut-1.jpeg instaid the img/doughnut-1.jpeg
-                    let partPath = fullPath.slice(pos);
-                    // setup object placing in the cart
-                const item = {};
-                item.img = `img-cart${partPath}`;
 
 
 
@@ -60,11 +34,9 @@
                 //     children[0].children[0].textContent;
 
 
-                let name = event.target.parentElement.parentElement.parentElement.children[1].textContent;
+                let name = document.getElementById("elementName").textContent;
 
                 console.log(name);
-
-
 
                 let price = event.target.parentElement.parentElement.nextElementSibling.
                     children[0].children[1].textContent;
