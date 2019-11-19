@@ -410,6 +410,118 @@
         </div>
         <!--/Second container-->
 
+
+<div id='product-component-1573667445845'></div>
+<script type="text/javascript">
+    /*<![CDATA[*/
+    (function () {
+        var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+        if (window.ShopifyBuy)
+        {
+            if (window.ShopifyBuy.UI)
+            {
+                ShopifyBuyInit();
+            } else
+            {
+                loadScript();
+            }
+        } else
+        {
+            loadScript();
+        }
+        function loadScript() {
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = scriptURL;
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+            script.onload = ShopifyBuyInit;
+        }
+        function ShopifyBuyInit() {
+            var client = ShopifyBuy.buildClient({
+                domain: 'cosmopus.myshopify.com',
+                storefrontAccessToken: 'a8311116b0083f9e103ea970d12088c2',
+            });
+            ShopifyBuy.UI.onReady(client).then(function (ui) {
+                ui.createComponent('product', {
+                    id: '4345375162428',
+                    node: document.getElementById('product-component-1573667445845'),
+                    moneyFormat: '%24%7B%7Bamount%7D%7D',
+                    options: {
+                        "product": {
+                            "styles": {
+                                "product": {
+                                    "@media (min-width: 601px)": {
+                                        "max-width": "calc(25% - 20px)",
+                                        "margin-left": "20px",
+                                        "margin-bottom": "50px"
+                                    },
+                                    "carousel-button": {
+                                        "display": "none"
+                                    }
+                                }
+                            },
+                            "buttonDestination": "modal",
+                            "contents": {
+                                "img": false,
+                                "imgWithCarousel": true,
+                                "options": false
+                            },
+                            "width": "380px",
+                            "text": {
+                                "button": "View product"
+                            }
+                        },
+                        "productSet": {
+                            "styles": {
+                                "products": {
+                                    "@media (min-width: 601px)": {
+                                        "margin-left": "-20px"
+                                    }
+                                }
+                            }
+                        },
+                        "modalProduct": {
+                            "contents": {
+                                "img": false,
+                                "imgWithCarousel": true,
+                                "button": false,
+                                "buttonWithQuantity": true
+                            },
+                            "styles": {
+                                "product": {
+                                    "@media (min-width: 601px)": {
+                                        "max-width": "100%",
+                                        "margin-left": "0px",
+                                        "margin-bottom": "0px"
+                                    }
+                                }
+                            },
+                            "text": {
+                                "button": "Add to cart"
+                            }
+                        },
+                        "cart": {
+                            "text": {
+                                "total": "Subtotal",
+                                "button": "Checkout"
+                            }
+                        }
+                    },
+                });
+            });
+        }
+    })();
+/*]]>*/
+</script>
+
+
+
+
+
+
+
+
+
         <!--Third container item cards-->
         <div class="container" id="shop">
 
@@ -544,7 +656,7 @@
 
                         <!--Card image-->
                         <div class="view view-cascade overlay">
-                            <img class="card-img-top" id="item-img"
+                            <img class="card-img-top"  id="item-img"
                                 src="/img/fazup_pack_shop_item.jpg"
                                 alt="Fazup 2xPack Patch Set">
                             <a>
@@ -580,6 +692,219 @@
                                     <a class="store-item-icon" data-toggle="tooltip" data-placement="top" title="Add to the Cart">
                                         <i class="fas fa-shopping-cart mr-3"></i>
                                     </a>
+
+
+                                    <!--shopify button-->
+<div id='product-component-1573667694206'></div>
+<script type="text/javascript">
+    /*<![CDATA[*/
+    (function () {
+        var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+        if (window.ShopifyBuy)
+        {
+            if (window.ShopifyBuy.UI)
+            {
+                ShopifyBuyInit();
+            } else
+            {
+                loadScript();
+            }
+        } else
+        {
+            loadScript();
+        }
+        function loadScript() {
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = scriptURL;
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+            script.onload = ShopifyBuyInit;
+        }
+        function ShopifyBuyInit() {
+            var client = ShopifyBuy.buildClient({
+                domain: 'cosmopus.myshopify.com',
+                storefrontAccessToken: 'a8311116b0083f9e103ea970d12088c2',
+            });
+            ShopifyBuy.UI.onReady(client).then(function (ui) {
+                ui.createComponent('product', {
+                    id: '4345375162428',
+                    node: document.getElementById('product-component-1573667694206'),
+                    moneyFormat: '%24%7B%7Bamount%7D%7D',
+                    options: {
+                        "product": {
+                            "styles": {
+                                "product": {
+                                    "@media (min-width: 601px)": {
+                                        "max-width": "calc(25% - 20px)",
+                                        "margin-left": "0px",
+                                        "margin-bottom": "0px"
+                                    }
+                                },
+                                "button": {
+                                    "border-radius": "11px",
+                                    "padding-left": "10px",
+                                    "padding-right": "10px",
+                                    "paddint-top": "1px"
+                                }
+                            },
+                            "contents": {
+                                "img": false,
+                                "title": false,
+                                "price": false
+                            },
+                            "text": {
+                                "button": "Add to Cart"
+                            }
+                        },
+                        "productSet": {
+                            "styles": {
+                                "products": {
+                                    "@media (min-width: 601px)": {
+                                        "margin-left": "-20px"
+                                    }
+                                }
+                            }
+                        },
+                        "modalProduct": {
+                            "contents": {
+                                "img": false,
+                                "imgWithCarousel": true,
+                                "button": false,
+                                "buttonWithQuantity": true
+                            },
+                            "styles": {
+                                "product": {
+                                    "@media (min-width: 601px)": {
+                                        "max-width": "100%",
+                                        "margin-left": "0px",
+                                        "margin-bottom": "0px"
+                                    }
+                                },
+                                "button": {
+                                    "border-radius": "11px",
+                                    "padding-left": "10px",
+                                    "padding-right": "10px"
+                                }
+                            },
+                            "text": {
+                                "button": "Add to cart"
+                            }
+                        },
+                        "cart": {
+                            "styles": {
+                                "button": {
+                                    "border-radius": "11px"
+                                },
+                                "title": {
+                                    "color": "#514343"
+                                },
+                                "header": {
+                                    "color": "#514343"
+                                },
+                                "lineItems": {
+                                    "color": "#514343"
+                                },
+                                "subtotalText": {
+                                    "color": "#514343"
+                                },
+                                "subtotal": {
+                                    "color": "#514343"
+                                },
+                                "notice": {
+                                    "color": "#514343"
+                                },
+                                "currency": {
+                                    "color": "#514343"
+                                },
+                                "close": {
+                                    "color": "#514343",
+                                    ":hover": {
+                                        "color": "#514343"
+                                    }
+                                },
+                                "empty": {
+                                    "color": "#514343"
+                                },
+                                "noteDescription": {
+                                    "color": "#514343"
+                                },
+                                "discountText": {
+                                    "color": "#514343"
+                                },
+                                "discountIcon": {
+                                    "fill": "#514343"
+                                },
+                                "discountAmount": {
+                                    "color": "#514343"
+                                },
+                                "cart": {
+                                    "background-color": "#fafafa"
+                                },
+                                "footer": {
+                                    "background-color": "#fafafa"
+                                }
+                            },
+                            "text": {
+                                "total": "Subtotal",
+                                "button": "Checkout"
+                            }
+                        },
+                        "lineItem": {
+                            "styles": {
+                                "variantTitle": {
+                                    "color": "#514343"
+                                },
+                                "title": {
+                                    "color": "#514343"
+                                },
+                                "price": {
+                                    "color": "#514343"
+                                },
+                                "fullPrice": {
+                                    "color": "#514343"
+                                },
+                                "discount": {
+                                    "color": "#514343"
+                                },
+                                "discountIcon": {
+                                    "fill": "#514343"
+                                },
+                                "quantity": {
+                                    "color": "#514343"
+                                },
+                                "quantityIncrement": {
+                                    "color": "#514343",
+                                    "border-color": "#514343"
+                                },
+                                "quantityDecrement": {
+                                    "color": "#514343",
+                                    "border-color": "#514343"
+                                },
+                                "quantityInput": {
+                                    "color": "#514343",
+                                    "border-color": "#514343"
+                                }
+                            }
+                        }
+                    },
+                });
+            });
+        }
+    })();
+/*]]>*/
+</script>
+
+
+
+
+
+
+                                    <!--./shopify button-->
+
+
+
+
+
 
                                     <a data-toggle="tooltip" data-placement="top" title="Share"><i
                                             class="fas fa-share-alt mr-3"></i></a>
