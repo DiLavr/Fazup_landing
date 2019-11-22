@@ -3,7 +3,7 @@
 #header_logo {
     float: left;
     width: 50px;
-    height: 70px;
+    height: 50px;
     margin: 0;
     padding: 0;
     /* position: absolute; */
@@ -25,4 +25,4 @@
     margin: 0px;
     margin-left: 5px;
     padding: 5px 0px;
-}s
+}
